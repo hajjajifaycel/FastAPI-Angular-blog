@@ -1,0 +1,23 @@
+
+<div class="container">
+    <h3>Create a blog!</h3>
+    <form [formGroup]="myForm" (ngSubmit)="submitHandler()">
+        <mat-form-field class="form-group">
+            <input matInput ngModel  required type="text" formControlName="title"  class="form-control" placeholder="Title"/>
+        </mat-form-field>
+        <pre></pre>
+        <mat-form-field class="form-group">
+            <textarea matInput ngModel required type="text" formControlName="description" class="form-control" placeholder="Content"></textarea>
+        </mat-form-field>
+        <pre></pre>
+        <mat-form-field class="form-group">
+            <input matInput ngModel required type="text" formControlName="img"  class="form-control" placeholder="Image URL"/>
+        </mat-form-field>
+        <pre></pre>
+        <mat-form-field class="form-group">
+            <input matInput ngModel required type="text" formControlName="author"  class="form-control" placeholder="Author"/>
+        </mat-form-field>
+        <pre></pre>
+        <button mat-button color="primary" class="btn-primary" [disabled]="myForm.invalid" type="submit">Submit</button>
+    </form>
+</div>

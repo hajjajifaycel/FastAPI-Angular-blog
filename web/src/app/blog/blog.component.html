@@ -1,0 +1,19 @@
+
+<div class="blog">
+  <div class="container">
+    <div class="backbtn">
+      <a href="/" >
+        <button  mat-button color="primary">Back to home</button>
+      </a>
+    </div>
+
+      <div class="blog-image">
+      </div>
+            <h1>{{Data.title}}</h1>
+            <p>Author: {{Data.author}}</p>
+            <div class="blog-content">
+            <p [innerHTML]=Data.description></p>  
+            </div>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+
+<div class="container">
+    <h1>Welcome to my blog!</h1>
+    <ul *ngFor="let post of Data"  class="list">
+        <li class="item">
+            <h2>{{post.title}}</h2>
+            <h5>Author : {{post.author}}</h5>
+            <a href="/post/{{post.id}}">
+                <button  mat-flat-button color="primary">Read more</button>
+            </a>
+        </li>
+    </ul>
+
+</div>
